@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0; /* Optional: add a background color for contrast */
+        gap: 50px;
+      }
+      form {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        max-width: 400px;
+        gap: 10px; /* Add some space between elements */
+        padding: 20px; /* Add padding inside the form */
+        background-color: white;
+        border-radius: 10px; /* Round the corners of the form */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        text-align: left;
+        display: flex;
+        align-items: center;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="tel"],
+      input[type="email"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #submit {
+        grid-column: span 2;
+        padding: 10px;
+        background-color: rgb(30, 30, 255);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #submit:hover {
+        background-color: rgb(3, 3, 97);
+      }
+
+      .logo img {
+        align-items: flex-start;
+        max-width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="./Facebook.png" alt="facebook" />
+    </div>
+    <div>
+      <form action="./login.html">
+        <label for="name">NAME:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="ENTER FULL NAME"
+          required
+        />
+
+        <label for="email">EMAIL:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="ENTER EMAIL ID"
+          required
+        />
+
+        <label for="mobile">MOBILE NUMBER:</label>
+        <input
+          type="tel"
+          name="mobile"
+          id="mobile"
+          pattern="[0-9]{10}"
+          placeholder="ENTER MOBILE NUMBER"
+          required
+        />
+
+        <label for="password">PASSWORD:</label>
+        <input
+          type="password"
+          name="password"
+          id="Password"
+          required
+          placeholder="ENTER PASSWORD"
+        />
+
+        <label for="password2">CONFIRM PASSWORD:</label>
+        <input
+          type="password"
+          name="password2"
+          id="Password2"
+          required
+          placeholder="RE-ENTER PASSWORD"
+        />
+
+        <input
+          class="submit"
+          type="submit"
+          id="submit"
+          value="CREATE ACCOUNT"
+        />
+      </form>
+    </div>
+  </body>
+</html>

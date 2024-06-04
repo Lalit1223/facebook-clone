@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    background-color: #3d20e2;
+}
+
+.header  .header .search, .header  {
+    flex: 1;
+}
+
+.header .search input {
+    width: 300px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.header .nav-icons {
+    text-align: right;
+    }
+
+    .nav-icons{
+        background-color: beige;
+    }
+
+    .logo{
+        background-color: antiquewhite;
+    }
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.left-sidebar {
+    width: 20%;
+    padding: 20px;
+    height: 350px;
+}
+
+.left-sidebar ul {
+    list-style: none;
+}
+
+.left-sidebar ul li {
+    padding: 10px 0;
+}
+
+.main-content {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    height: 1500px;
+}
+
+.stories,  .Messages, .contacts {
+    margin-bottom: 20px;
+}
+
+
+
+.right-sidebar {
+    width: 15%;
+    background-color: #fff;
+    padding: 20px;
+    height: 550px;
+}
+.posts{
+
+    justify-content: left;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+
+}
+
+.img{
+    image-rendering:auto;
+    height:100px;
+    width:100%;
+    padding: 20px;
+    
+
+}
+
+.nav-icons {
+    grid-column: span 2;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+  }
+
+.nav-icons:hover {
+    text-decoration: underline;
+  }
