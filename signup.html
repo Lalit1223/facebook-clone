@@ -9,15 +9,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 150vh;
         margin: 0;
-        background-color: #f0f0f0; /* Optional: add a background color for contrast */
+        background-color: #f0f0f0; /*Optional: add a background color for contrast*/
         gap: 50px;
       }
       form {
         display: grid;
         grid-template-columns: auto 1fr;
-        max-width: 400px;
+        max-width: 450px;
         gap: 10px; /* Add some space between elements */
         padding: 20px; /* Add padding inside the form */
         background-color: white;
@@ -30,94 +30,239 @@
         align-items: center;
       }
 
-      input[type="text"],
-      input[type="password"],
-      input[type="tel"],
-      input[type="email"] {
+      input[type="text"] {
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
+      }
+      input[type="password"],
+      input[type="tel"],
+      input[type="email"],
+      input[type="date"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        grid-column: span 2;
       }
 
       #submit {
         grid-column: span 2;
         padding: 10px;
-        background-color: rgb(30, 30, 255);
+        background-color: rgb(21, 206, 98);
         color: white;
+        font-weight: 700;
+        font-size: large;
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        width: 45%;
       }
 
       #submit:hover {
-        background-color: rgb(3, 3, 97);
+        background-color: rgb(14, 228, 50);
       }
 
       .logo img {
-        align-items: flex-start;
+        margin-left: 125px;
         max-width: 200px;
+        margin-bottom: 30px;
+      }
+      .dob-container {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        grid-column: span 2;
+      }
+      .gen-container {
+        display: flex;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        grid-column: span 2;
+      }
+      .gen-container label {
+        width: calc(33.33% - 6.66px); /* Adjust width for each select field */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .dob-container select {
+        width: calc(33.33% - 6.66px); /* Adjust width for each select field */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .head {
+        text-align: center;
+        grid-column: span 2;
+      }
+
+      .but {
+        grid-column: span 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
-    <div class="logo">
-      <img src="./Facebook.png" alt="facebook" />
-    </div>
     <div>
-      <form action="./login.html">
-        <label for="name">NAME:</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="ENTER FULL NAME"
-          required
-        />
+      <div class="logo">
+        <img src="./Facebook.png" alt="facebook" />
+      </div>
+      <div>
+        <form action="./login.html">
+          <div class="head">
+            <p><b>Create a new account</b></p>
+            <p style="color: rgba(51, 48, 49, 0.7)">It's quick and easy.</p>
+            <hr />
+          </div>
 
-        <label for="email">EMAIL:</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="ENTER EMAIL ID"
-          required
-        />
+          <input
+            type="text"
+            name="name"
+            id="Fname"
+            placeholder="ENTER FIRST NAME"
+            required
+          />
+          <input
+            type="text"
+            name="name"
+            id="Lname"
+            placeholder="ENTER LAST NAME"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ENTER EMAIL ID"
+            required
+          />
+          <input
+            type="tel"
+            name="mobile"
+            id="mobile"
+            pattern="[0-9]{10}"
+            placeholder="ENTER MOBILE NUMBER"
+            required
+          />
 
-        <label for="mobile">MOBILE NUMBER:</label>
-        <input
-          type="tel"
-          name="mobile"
-          id="mobile"
-          pattern="[0-9]{10}"
-          placeholder="ENTER MOBILE NUMBER"
-          required
-        />
+          <div><label for="DOB">Birthdate:</label></div>
+          <div class="dob-container">
+            <select name="dob-day" id="dob-day" required>
+              <option value="" disabled selected>DD</option>
+              <!-- Add options for day (1 to 31) -->
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            <select name="dob-month" id="dob-month" required>
+              <option value="" disabled selected>MM</option>
+              <!-- Add options for month (1 to 12) -->
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <select name="dob-year" id="dob-year" required>
+              <option value="" disabled selected>YYYY</option>
+              <!-- Add options for year () -->
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+            </select>
+          </div>
+          <div><label for="Gender">Gender:</label></div>
+          <div class="gen-container">
+            <input type="radio" name="Gender" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="Gender" id="female" />
+            <label for="female">Female</label>
+            <input type="radio" name="Gender" id="other" />
+            <label for="other">Other</label>
+          </div>
 
-        <label for="password">PASSWORD:</label>
-        <input
-          type="password"
-          name="password"
-          id="Password"
-          required
-          placeholder="ENTER PASSWORD"
-        />
-
-        <label for="password2">CONFIRM PASSWORD:</label>
-        <input
-          type="password"
-          name="password2"
-          id="Password2"
-          required
-          placeholder="RE-ENTER PASSWORD"
-        />
-
-        <input
-          class="submit"
-          type="submit"
-          id="submit"
-          value="CREATE ACCOUNT"
-        />
-      </form>
+          <input
+            type="password"
+            name="password"
+            id="Password"
+            required
+            placeholder="ENTER PASSWORD"
+          />
+          <input
+            type="password"
+            name="password2"
+            id="Password2"
+            required
+            placeholder="RE-ENTER PASSWORD"
+          />
+          <div style="grid-column: span 2">
+            <p>
+              <small>
+                who use our service may have uploaded your contact information
+                to Facebook. <a href="#">Learn more.</a>
+              </small>
+            </p>
+            <p>
+              <small>
+                By clicking Sign Up, you agree to our
+                <a href="#">Terms, Privacy Policy</a> and
+                <a href="#">Cookies Policy.</a> You may receive SMS
+                notifications from us and can opt out at any time.
+              </small>
+            </p>
+          </div>
+          <div class="but">
+            <input class="submit" type="submit" id="submit" value="Sign Up" />
+          </div>
+          <div class="but">
+            <a href="./login.html"><em>Already have an account?</em></a>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

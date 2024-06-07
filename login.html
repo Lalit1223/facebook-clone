@@ -26,12 +26,6 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
 
-      label {
-        text-align: left;
-        display: flex;
-        align-items: center;
-      }
-
       input[type="text"],
       input[type="password"] {
         padding: 10px;
@@ -44,6 +38,7 @@
         padding: 10px;
         background-color: blue;
         color: white;
+        font-weight: 700;
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -64,39 +59,46 @@
         text-decoration: underline;
       }
       .logo img {
-        align-items: flex-start;
+        margin-left: 40px;
         max-width: 200px;
+        margin-bottom: 30px;
+      }
+      .head {
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
       }
     </style>
   </head>
   <body>
-    <div class="logo">
-      <img src="./Facebook.png" alt="facebook" />
+    <div>
+      <div class="logo">
+        <img src="./Facebook.png" alt="facebook" />
+      </div>
+      <form action="./2_Fb.html">
+        <div class="head">
+          <h4>Login to Facebook</h4>
+        </div>
+        <br />
+        <input
+          type="text"
+          name="login_id"
+          id="login_id"
+          placeholder="Enter number or mail"
+        />
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter password"
+          required
+        />
+
+        <input class="submit" type="submit" id="submit" value="Login" />
+        <a href="./signup.html"><em>Didn't have account?</em></a>
+        <a href="./signup.html"><em>Forgot Password?</em></a>
+      </form>
     </div>
-    <form action="./2_Fb.html">
-      <label for="login_id"
-        ><span style="color: darkgoldenrod">Username:</span></label
-      >
-      <input
-        type="text"
-        name="login_id"
-        id="login_id"
-        placeholder="Enter number or mail"
-      />
-
-      <label for="password">
-        <span style="color: darkgoldenrod">Password:</span>
-      </label>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="Enter password"
-        required
-      />
-
-      <input class="submit" type="submit" id="submit" value="Login" />
-      <a href="./signup.html"><em>didn't have account?</em></a>
-    </form>
   </body>
 </html>
