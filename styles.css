@@ -14,39 +14,83 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    background-color: #2e4b94;
+    position: relative; /* Make header the reference for absolute positioning */
 
-    background-color: #3d20e2;
+
 }
 
-.header  .header .search, .header  {
-    flex: 1;
-}
 
 .header .search input {
     width: 300px;
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
+    height: 30px;
 }
 
-.header .nav-icons {
-    text-align: right;
-    }
+.logo {
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    margin-right: 15px;
+}
 
-    .nav-icons{
-        background-color: beige;
-    }
+.logo img {
+    width: 35px;
+    height: 35px;
+}
 
-    .logo{
-        background-color: #f0f2f5;
-        border-radius: 35px;
+.left-header {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    position: absolute; /* Positioning the left header absolutely */
+    left: 20px;
+}
+
+.middle-header {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    gap: 50px; /* Add space between the images */
+    flex-grow: 1; /* Allow middle-header to grow and center its content */
     
-    }
-    .logo img{
-         
-        height: 35px;
-        width: 100%;
-    }
+
+}
+
+.middle-header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.middle-header li {
+    list-style: none;
+}
+
+.middle-header img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+}
+
+
+.right-header {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Positioning the right header absolutely */
+    right: 20px; /* Keep it near the right edge */
+
+}
+
+.nav-icons img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
 .main-container {
     display: flex;
     justify-content: space-between;
@@ -67,6 +111,11 @@ body {
 
 .left-sidebar ul li {
     padding: 10px 0;
+    margin-left: 30px;
+}
+
+.left-sidebar ul li a {
+    text-decoration: none;
 }
 
 .main-content {
@@ -76,11 +125,9 @@ body {
     height: 1500px;
 }
 
-.stories,  .Messages, .contacts {
+.stories, .Messages, .contacts {
     margin-bottom: 20px;
 }
-
-
 
 .right-sidebar {
     width: 15%;
@@ -88,31 +135,27 @@ body {
     padding: 20px;
     height: 550px;
 }
-.posts{
 
+.posts {
     justify-content: left;
     width: 50%;
     margin: 20px auto;
     padding: 20px;
-
 }
 
-.img{
-    image-rendering:auto;
-    height:100px;
-    width:100%;
+.img {
+    image-rendering: auto;
+    height: 100px;
+    width: 100%;
     padding: 20px;
-    
-
 }
 
 .nav-icons {
-    grid-column: span 2;
     text-align: center;
     text-decoration: none;
-    color: rgb(0, 0, 0)
-  }
+    color: rgb(0, 0, 0);
+}
 
 .nav-icons:hover {
     text-decoration: underline;
-  }
+}
