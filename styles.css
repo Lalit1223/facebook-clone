@@ -122,11 +122,30 @@ body {
     width: 50%;
     background-color: #fff;
     padding: 20px;
-    height: 1500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.stories, .Messages, .contacts {
+.stories {
     margin-bottom: 20px;
+}
+
+.posts {
+    display: grid;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.img-container {
+    flex: 1; /* This allows the images to take equal space */
+    overflow: hidden; /* Hide any overflow of images */
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 .right-sidebar {
