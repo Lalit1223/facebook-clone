@@ -40,6 +40,59 @@ body {
     height: 35px;
 }
 
+.profile{
+    display: flex;
+}
+.profile img{
+    
+    width: 35px;
+    height: 35px;
+}
+.live{
+    display: flex;
+}
+.live img{
+
+    width: 35px;
+    height: 35px;
+    align-items: start;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.place{
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px 10px;
+margin-top: 10px;
+    
+}
+.live-icons ul img{
+    width: 35px;
+    height: 35px;
+}
+.live-icons ul li{
+    list-style: none;
+    display: flex;
+}
+.live-icons ul{
+    display: flex;
+    justify-content: space-between;
+}
+.profile button{
+    margin-left: 5px;
+
+    width: 50px;
+    height: 35px;
+}
+.upper-content{
+display: grid;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+gap: 10px;
+border-radius: 15px;
+}
+
 .left-header {
     display: flex;
     align-items: center; /* Align items vertically center */
@@ -61,7 +114,7 @@ body {
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: auto;
 }
 
 .middle-header li {
@@ -69,8 +122,8 @@ body {
 }
 
 .middle-header img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 
 }
@@ -124,11 +177,49 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    
+}
+.status {
+        display: flex;
+        gap: 15px; /* Space between stories */
+        overflow-x: auto; /* Allow horizontal scrolling on small screens */
+        padding: 10px 0;
+        height: 300px;
 }
 
 .stories {
-    margin-bottom: 20px;
-}
+    position: relative;
+    width: 33.3%; /* Set a fixed width for each story */
+    height: 100%; /* Set a fixed height for each story */
+    border-radius: 10px; /* Rounded corners for the stories */
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
+  }
+  .stories:hover {
+    transform: scale(1.05); /* Slightly enlarge the story on hover */
+  }
+
+  .stories-img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; Ensure the image covers the story area without distortion */
+  }
+
+  .account {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    width: 30px; /* Size of the account icon */
+    height: 30px;
+    border: 2px solid #fff; /* White border around the account icon */
+    border-radius: 50%; /* Make the account icon circular */
+    object-fit: cover; /* Ensure the icon is not distorted */
+  }
+  
+  
+
+
 
 .posts {
     display: grid;
@@ -157,7 +248,7 @@ body {
 
 .posts {
     justify-content: left;
-    width: 50%;
+    width: 80%;
     margin: 20px auto;
     padding: 20px;
 }
@@ -178,3 +269,12 @@ body {
 .nav-icons:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
