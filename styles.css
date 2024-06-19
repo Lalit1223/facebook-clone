@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #959ca357;
 }
 
 .header {
@@ -14,7 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #2e4b94;
+    background-color: white;
     position: relative; /* Make header the reference for absolute positioning */
 
 
@@ -63,9 +63,12 @@ body {
 }
 .place{
     width: 400px;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 5px 10px;
 margin-top: 10px;
+background-color: #959ca357;
+border: solid 1px gray;
+
     
 }
 .live-icons ul img{
@@ -91,6 +94,8 @@ display: grid;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 gap: 10px;
 border-radius: 15px;
+background-color: white;
+padding: 10px;
 }
 
 .left-header {
@@ -122,8 +127,8 @@ border-radius: 15px;
 }
 
 .middle-header img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 
 }
@@ -148,8 +153,7 @@ border-radius: 15px;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 20px auto;
-    padding: 20px;
+
 }
 
 .left-sidebar {
@@ -173,9 +177,7 @@ border-radius: 15px;
 
 .main-content {
     width: 50%;
-    background-color: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     
 }
@@ -183,18 +185,27 @@ border-radius: 15px;
         display: flex;
         gap: 15px; /* Space between stories */
         overflow-x: auto; /* Allow horizontal scrolling on small screens */
-        padding: 10px 0;
-        height: 300px;
+        padding: 10px ;
+        height: 230px;
+        width: 100%;
+        margin-bottom: 10px;
+        
+       
 }
 
 .stories {
+    
     position: relative;
-    width: 33.3%; /* Set a fixed width for each story */
+    width: 20%; /* Set a fixed width for each story */
     height: 100%; /* Set a fixed height for each story */
     border-radius: 10px; /* Rounded corners for the stories */
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
     transition: transform 0.3s; /* Smooth scaling effect on hover */
+    margin-right: 10px;
+    
+
+
   }
   .stories:hover {
     transform: scale(1.05); /* Slightly enlarge the story on hover */
@@ -205,6 +216,36 @@ border-radius: 15px;
     height: 100%;
     /* object-fit: cover; Ensure the image covers the story area without distortion */
   }
+
+  .buttonadd {
+    width: 25px;
+    height: 25px;
+    border: 5px solid white;
+    border-radius: 25px;
+    background-color: #0866ff;
+    border: none;
+    color: white;
+    margin: -10px 0px 0px 45px;
+  }
+  
+  .Story-text {
+    margin: 0px;
+    text-align: center;
+    font-weight: 500;
+    font-size: medium;
+  }
+  .profile-story {
+    display: inline-block;
+    position: relative;
+    border-radius: 10px 10px 0px 0px;
+   
+    height: 170px;
+    width: 20%;
+    background-size: cover;
+    margin-right: 20px;
+
+  }
+  
 
   .account {
     position: absolute;
@@ -240,8 +281,9 @@ border-radius: 15px;
 }
 
 .right-sidebar {
+    margin-top: 20px;
     width: 15%;
-    background-color: #fff;
+    background-color: #959ca357;
     padding: 20px;
     height: 550px;
 }
@@ -269,7 +311,6 @@ border-radius: 15px;
 .nav-icons:hover {
     text-decoration: underline;
 }
-
 
 
 
