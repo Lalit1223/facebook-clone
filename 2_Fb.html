@@ -32,9 +32,14 @@
       </div>
 
       <div class="right-header">
-        <a href="./login.html">
-          <div class="nav-icons"><img src="./log-in.png" alt="login" /></div
-        ></a>
+        <!-- <a href="./login.html">
+          <div class="nav-icons"><img src="./login.png" alt="login" /></div
+        ></a> -->
+        <ul class="middle-header">
+          <li><img src="./app_menu.png" alt="home" /></li>
+          <li><img src="./messanger.png" alt="Video" /></li>
+          <li><img src="./bell_icon.png" alt="Video" /></li>
+        </ul>
       </div>
     </header>
     <div class="main-container">
@@ -42,8 +47,22 @@
         <ul>
           <li>
             <div class="profile">
-              <img src="./man.png" alt="logo" />
-              <a href="./profile.html"><button>Profile</button></a>
+              <a href="./profile.html">
+                <div style="display: flex">
+                  <div>
+                    <img
+                      class="account-profile"
+                      src="./IMG_5954.jpg"
+                      alt="logo"
+                    />
+                  </div>
+                  <div style="margin: 4px 0 0 4px">
+                    <p style="font-weight: 200; color: black">
+                      <b>Lalit Gandhi</b>
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           </li>
           <li><a href="./2_Fb.html">Home</a></li>
@@ -68,7 +87,7 @@
       </div>
       <div class="main-content">
         <div class="status">
-          <div class="profile-story" style="border: 2px solid grey">
+          <div class="profile-story">
             <img src="./IMG_5954.jpg" alt="lalit" class="stories-img" />
             <button class="buttonadd">+</button>
             <p class="Story-text">Create Story</p>
@@ -89,7 +108,7 @@
 
         <div class="upper-content">
           <div class="live">
-            <img src="./profile (1).png" alt="account" />
+            <img class="account-profile" src="./IMG_5954.jpg" alt="account" />
 
             <input
               class="place"
@@ -122,17 +141,20 @@
           </div>
         </div>
         <div class="posts">
-          <div class="img-container">
-            <img src="image1.jpg" alt="Post 1" class="post-img" />
-            <pre style="font-size: larger">  like       comment      share</pre>
-          </div>
-          <div class="img-container">
-            <img src="image2.jpg" alt="Post 2" class="post-img" />
-            <pre style="font-size: larger">  like       comment      share</pre>
-          </div>
-          <div class="img-container">
-            <img src="image3.jpg" alt="Post 3" class="post-img" />
-            <pre style="font-size: larger">  like       comment      share</pre>
+          <div class="post-container">
+            <div class="post-heading">
+              <img class="account-profile" src="./IMG_5954.jpg" alt="account" />
+              <div>
+                <p class="name-text">
+                  <small> <b> Lalit Gandhi</b></small>
+                </p>
+                <p class="name-text" style="color: darkgrey">
+                  <small>1h .👥</small>
+                </p>
+              </div>
+            </div>
+            <div class="content"></div>
+            <div class="footer"></div>
           </div>
         </div>
       </div>
