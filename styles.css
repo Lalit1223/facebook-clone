@@ -153,8 +153,10 @@ margin:auto
 
 .main-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
+    background-color: #959ca357;
+
    
 
 }
@@ -162,7 +164,7 @@ margin:auto
 .left-sidebar {
     width: 20%;
     padding: 20px;
-    height: 350px;
+    height: 800px;
 }
 
 .left-sidebar ul {
@@ -282,10 +284,10 @@ margin:auto
 
 
 .right-sidebar {
-    width: 15%;
-    background-color: #959ca357;
-    padding: 20px;
-    height: 550px;
+    
+    width: 18%;
+    padding: 10px;
+    height: 800px;
 }
 
 
@@ -309,23 +311,78 @@ margin:auto
 
 
 .post-container{
-    height: 500px;
+    height: 630px;
     background-color: white;
     border-radius: 15px;
     width: 95%;
 margin: 20px 0 0 15px;    
+padding: 10px;
 }
 
 .post-heading{
-    padding: 20px;
+    
     display: flex;
     
 }
 
 .name-text{
  
- margin:3px 0px 0px 7px;
+ margin:3px 0px 10px 7px;
+
 }
+.post-image{
+    height:420px;
+    width: 98%;
+    margin:5px 0px 0px 7px;
+    border-radius: 6px;
+}
+
+.post_likeSVG {
+    display: flex;
+    margin-top: 4px;
+    width: 80%;
+    height: 20px;
+  }
+  
+  .SVG_icon {
+    width: 9%;
+    height: 20px;
+  }
+  
+  .like_thum {
+    padding-top: 2px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .love_thum {
+    margin-top: -10px;
+    margin-left: -8px;
+    width: 18px;
+    height: 18px;
+  }
+  .post_t {
+    width: 210px;
+    height: 20px;
+  }
+  
+  .post_text {
+    color: rgb(106, 104, 104);
+    margin: 0px;
+    width: 200px;
+    font-size: smaller;
+  }
+
+  .post-footer{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .post-footer img{
+    height: 30px;
+  }
+  
 
 
 
