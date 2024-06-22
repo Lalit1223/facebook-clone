@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #959ca357;
+    background-color: #e5ecf557;
 }
 
 .header {
@@ -30,14 +30,13 @@ body {
 }
 
 .logo {
-    background-color: #f0f2f5;
     border-radius: 10px;
     margin-right: 15px;
 }
 
 .logo img {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
 }
 
 .profile{
@@ -71,6 +70,10 @@ border: solid 1px gray;
 
     
 }
+.live-icons{
+  padding: 0px 30px 0px 30px;
+
+}
 .live-icons ul img{
     width: 35px;
     height: 35px;
@@ -95,7 +98,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 gap: 10px;
 border-radius: 15px;
 background-color: white;
-padding: 10px;
+padding: 10px 10px 10px 10px;
 width: 95%;
 margin:auto
 }
@@ -113,9 +116,7 @@ margin:auto
     align-items: center; /* Center images vertically */
     gap: 50px; /* Add space between the images */
     flex-grow: 1; /* Allow middle-header to grow and center its content */
-    
-
-}
+    }
 
 .middle-header ul {
     display: flex;
@@ -124,25 +125,37 @@ margin:auto
     margin: auto;
 }
 
-.middle-header li {
-    list-style: none;
-}
-
 .middle-header img {
     width: 30px;
     height: 30px;
     cursor: pointer;
-
 }
 
 
 .right-header {
     display: flex;
-    align-items: center;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    gap: 50px; /* Add space between the images */
     position: absolute; /* Positioning the right header absolutely */
     right: 20px; /* Keep it near the right edge */
+}
+
+.right-header ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  list-style-type: none;
 
 }
+.right-header img{
+  margin: auto;
+  width: 25px;
+height: 25px;
+    cursor: pointer;
+}
+
 
 .nav-icons img {
     width: 50px;
@@ -153,7 +166,7 @@ margin:auto
 
 .main-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     background-color: #959ca357;
 
@@ -164,7 +177,9 @@ margin:auto
 .left-sidebar {
     width: 20%;
     padding: 20px;
-    height: 800px;
+    height: 1200px;
+
+
 }
 
 .left-sidebar ul {
@@ -172,8 +187,8 @@ margin:auto
 }
 
 .left-sidebar ul li {
-    padding: 10px 0;
-    margin-left: 30px;
+    padding: 3px;
+    margin-left: 10px;
 }
 
 .left-sidebar ul li a {
@@ -183,7 +198,7 @@ margin:auto
 .main-content {
     width: 50%;
     padding: 20px;
-    height: 800px;
+    height: 1500px;
     overflow-y: scroll;
     
 }
@@ -276,18 +291,14 @@ margin:auto
      border-radius: 50%; /* Make the account icon circular */
 
   }
-  
-  
-
-
-
 
 
 .right-sidebar {
     
     width: 18%;
     padding: 10px;
-    height: 800px;
+    height: 1500px;
+    display: block;
 }
 
 
@@ -382,9 +393,94 @@ padding: 10px;
   .post-footer img{
     height: 30px;
   }
+
+  .btn-add{
+    margin-top: 3px;
+    height: 25px;
+    width: 70px;
+    background-color: blue;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px solid blue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .btn-del{
+    margin-top: 3px;
+    height: 25px;
+    width: 70px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #e5ecf557;
+
+    border: 1px solid #e5ecf557 ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .Messages{
+    height: 200px;
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 7px;
+    padding: 3px;
+    margin-bottom: 10px;
+  }
+
+  .contacts{
+    height: 100px;
+    width: 100%;
+    border-radius: 7px;
+    padding: 2px;
+    margin-bottom: 10px;
+
+
+  }
+  .sponsored{
+    height: 220px;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .sponsored img{
+    height: 170px;
+    width: 100%;
+  }
   
+  .birthdays{
+    height: 100px;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
 
+  }
 
+  .friend-requests{
+    display:flex;
+ 
 
+  }
 
+  .list-images{
+    margin:5px 0px 10px 5px;
+    height: 23px;
+    width: 23px;
+  }
 
+  .list-container{
+    display: flex;
+    width: 100%;
+    height: 40px;
+
+  }
+  .list-container:hover{
+    background-color:white;
+    border-radius: 8px 0px 0px 8px;
+
+  }
+
+  .list-container a{
+    padding:5px;
+    margin:5px 0px 10px 5px;
+    font-weight: bolder;
+    color: rgb(8, 8, 8);
+}
